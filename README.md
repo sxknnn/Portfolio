@@ -1,7 +1,12 @@
 # Software Engineer
 
 ### Education
-Computer Science, Bachelors
+Major:
+Computer Science and Engineering
+Minor:
+Mathematics
+GPA:
+3.96
 
 ### Work Experience
 - x

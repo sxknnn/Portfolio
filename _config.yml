@@ -1,4 +1,25 @@
-title: Sujana Kabir
-logo: /assets/img/headshot_circle.png
-show_downloads: true
-theme: jekyll-theme-minimal
+
+# This is how Jekyll knows to use this theme.
+remote_theme: tedivm/jekyll-theme-portfolio
+
+
+title: Your awesome title
+author: Your Name
+email: your-email@domain.com
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+
+# Header Links - all optional. If set these create header links.
+homepage: https://your.homepage.com
+twitter_username: example
+github_username: example
+linkedin_username: example
+
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-remote-theme # Lets us test remote themes locally.

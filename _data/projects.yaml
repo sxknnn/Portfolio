@@ -1,13 +1,3 @@
-# Welcome to My Portfolio
-
-name: Sujana Kabir
-title: Software Engineer
-
-education:
-  major: Computer Science and Engineering
-  minor: Mathematics
-  GPA: 3.96
-
 projects:
   - name: CLIs
     icon: fas fa-terminal

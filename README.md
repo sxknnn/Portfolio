@@ -1,7 +1,4 @@
----
-layout: home
-title: "Sujana's Portfolio"
----
+
 # Welcome to My Portfolio
 
 ## Software Engineer

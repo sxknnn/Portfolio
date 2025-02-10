@@ -12,8 +12,8 @@ description: >
 # Header Links - all optional. If set these create header links.
 homepage: https://sxknnn.github.io/Portfolio/
 twitter_username: example
-github_username: https://github.com/sxknnn
-linkedin_username: https://www.linkedin.com/in/sujana-kabir-27a4b124b/
+github_username: sxknnn
+linkedin_username: sujana-kabir-27a4b124b
 
 plugins:
   - jekyll-feed

@@ -1,26 +1,34 @@
-name: Sujana Kabir
-title: Software Engineer
-education:
-  major: Computer Science and Engineering
-  minor: Mathematics
-  gpa: 3.96
 
-work_experience:
-  - role: Position X
-    company: Company Name
-    description: Brief description of your role and responsibilities.
-  - role: Position Y
-    company: Company Name
-    description: Brief description of your role and responsibilities.
 
-projects:
-  - name: EEG Analysis Project
-    description: A detailed description of what the project is about.
-    github: https://github.com/yourusername/eeg-analysis
-    technologies: [Python, Machine Learning]
+- name: Libraries
+  projects:
+    - name: Stash
+      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
+      github: tedious/Stash
+      documentation: https://www.stashphp.com/
+      packagist: tedivm/stash
+      icon: fab fa-php
 
-contact:
-  email: your-email@domain.com
-  github: sxknnn
-  linkedin: your-linkedin-profile
-  website: https://yourportfolio.com
+    - name: JShrink
+      description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.
+      github: tedious/JShrink
+      packagist: tedivm/jshrink
+      icon: fab fa-php
+
+    - name: github3apps.py
+      description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
+      github: tedivm/github3apps.py
+      pypi: github3apps.py
+      icon: fab fa-github
+
+    - name: Fetch
+      description: This library wraps the native PHP IMAP libraries around a modern object orientated interface.
+      github: tedious/Fetch
+      packagist: tedivm/fetch
+      icon: fab fa-php
+
+    - name: psad
+      description: This Puppet module controls the Port Scan Active Defense program, providing active response to block port scans.
+      puppet_forge: tedivm/psad
+      github: tedivm/puppet-psad
+      image: puppet.png

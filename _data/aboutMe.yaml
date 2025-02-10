@@ -1,0 +1,26 @@
+name: Sujana Kabir
+title: Software Engineer
+education:
+  major: Computer Science and Engineering
+  minor: Mathematics
+  gpa: 3.96
+
+work_experience:
+  - role: Position X
+    company: Company Name
+    description: Brief description of your role and responsibilities.
+  - role: Position Y
+    company: Company Name
+    description: Brief description of your role and responsibilities.
+
+projects:
+  - name: EEG Analysis Project
+    description: A detailed description of what the project is about.
+    github: https://github.com/yourusername/eeg-analysis
+    technologies: [Python, Machine Learning]
+
+contact:
+  email: your-email@domain.com
+  github: sxknnn
+  linkedin: your-linkedin-profile
+  website: https://yourportfolio.com

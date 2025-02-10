@@ -1,6 +1,5 @@
 
-- name: About me
-  
+
 - name: Libraries
   projects:
     - name: Stash

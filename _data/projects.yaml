@@ -1,12 +1,10 @@
 
 
-- name: Libraries
+- name: Projects
   projects:
-    - name: Stash
-      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
-      github: tedious/Stash
-      documentation: https://www.stashphp.com/
-      packagist: tedivm/stash
+    - name: Mobile Mech
+      description: An android application made using React Native and Firebase. Google Map API was integrated for successful location detection. This app was developed by following Agile methologies.
+      github: https://github.com/sxknnn/Mobile-Mech
       icon: fab fa-php
 
     - name: JShrink

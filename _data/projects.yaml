@@ -5,7 +5,7 @@
     - name: Mobile Mech
       description: An android application made using React Native and Firebase. Google Map API was integrated for successful location detection. This app was developed by following Agile methologies.
       github: sxknnn/Mobile-Mech
-      icon: fab fa-php
+      icon: wheel.png
 
     - name: JShrink
       description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.

@@ -1,25 +1,21 @@
-
 # This is how Jekyll knows to use this theme.
 remote_theme: tedivm/jekyll-theme-portfolio
 
-
-title: Your awesome title
-author: Your Name
-email: your-email@domain.com
+title: Sujana's Portfolio
+author: Sujana Kabir
+email: sxk4940@mavs.uta.edu
 description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-
 # Header Links - all optional. If set these create header links.
-homepage: https://your.homepage.com
+homepage: https://sxknnn.github.io/Portfolio/
 twitter_username: example
-github_username: example
-linkedin_username: example
-
+github_username: https://github.com/sxknnn
+linkedin_username: https://www.linkedin.com/in/sujana-kabir-27a4b124b/
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-remote-theme # Lets us test remote themes locally.
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme # Lets us test remote themes locally.

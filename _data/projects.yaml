@@ -1,45 +1,44 @@
 # Welcome to My Portfolio
 
-# Sujana Kabir
+name: Sujana Kabir
+title: Software Engineer
 
-## Software Engineer
+education:
+  major: Computer Science and Engineering
+  minor: Mathematics
+  GPA: 3.96
 
-### Education
-**Major**: Computer Science and Engineering  
-**Minor**: Mathematics  
-**GPA**: 3.96  
+projects:
+  - name: CLIs
+    icon: fas fa-terminal
+    items:
+      - name: Example
+        description: The logo for this project is for Puppet, and comes from the "assets/images/projects" directory.
+        github: example/example
+        pypi: example
+        image: puppet.png
 
-- name: CLIs
-  icon: fas fa-terminal
-  projects:
-    - name: Example
-      description: The logo for this project is for Puppet, and comes from the "assets/images/projects" directory.
-      github: example/example
-      pypi: example
-      image: puppet.png
+      - name: Example
+        description: This project can be installed from npm.
+        github: Example/Example
+        npm: Example
 
-    - name: Example
-      description: This project can be installed from npm.
-      github: Example/Example
-      npm: Example
+      - name: Example
+        description: This project can be installed from pypi.
+        github: Example/Example
+        pypi: Example
 
-    - name: Example
-      description: This project can be installed from pypi.
-      github: Example/Example
-      pypi: Example
+  - name: Misc
+    items:
+      - name: Example
+        description: This project uses Font Awesome icons and is on Dockerhub.
+        github: Example/Example
+        dockerhub: Example/Example
+        icon: fas fa-file-medical-alt
 
-
-- name: Misc
-  projects:
-    - name: Example
-      description: This project uses Font Awesome icons and is on Dockerhub.
-      github: Example/Example
-      dockerhub: Example/Example
-      icon: fas fa-file-medical-alt
-
-    - name: Example
-      description: This Wordpress Plugin is actually just an example project.
-      platform: Wordpress
-      github: Example/Example
-      wordpress: Example
-      icon: fab fa-wordpress
+      - name: Example
+        description: This WordPress Plugin is actually just an example project.
+        platform: Wordpress
+        github: Example/Example
+        wordpress: Example
+        icon: fab fa-wordpress

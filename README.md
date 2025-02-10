@@ -1,17 +1,19 @@
-# Software Engineer
+---
+layout: home
+title: "Sujana's Portfolio"
+---
+# Welcome to My Portfolio
+
+## Software Engineer
 
 ### Education
-Major:
-Computer Science and Engineering
-Minor:
-Mathematics
-GPA:
-3.96
+**Major**: Computer Science and Engineering  
+**Minor**: Mathematics  
+**GPA**: 3.96  
 
 ### Work Experience
 - x
 - y
 
-### projects
-eeg
--
+### Projects
+- EEG Analysis Project

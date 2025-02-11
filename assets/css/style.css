@@ -348,6 +348,31 @@ textarea:focus {
 }
 
 
+.contact__LinkedIn {
+  margin-top: 15px;
+}
+
+.contact__LinkedIn button {
+  padding: 10px 44px;
+  background-color: #171515;
+  font-size: 14px;
+}
+
+.contact__LinkedIn button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact__LinkedIn button > a > i {
+  font-size: 16px;
+}
+
+.contact__LinkedIn button:hover {
+  background-color: #030303;
+}
+
+
+
 /* Footer */
 footer {
   background-color: var(--dark-primary);

@@ -347,6 +347,64 @@ textarea:focus {
   background-color: #030303;
 }
 
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 5 / 3); /* Adjust width dynamically based on items */
+}
+
+/* Individual Slide */
+.slide {
+  flex: 1 0 calc(100% / 3); /* 3 slides visible at a time */
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide {
+      flex: 1 0 100%; /* Show 1 slide at a time on smaller screens */
+  }
+  .slider {
+      width: 500%; /* Reset width for single-item view */
+  }
+}
+
+
 /* Footer */
 footer {
   background-color: var(--dark-primary);

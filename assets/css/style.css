@@ -215,13 +215,6 @@ section.projects-section {
   background-color: var(--dark-primary);
   color: #fff;
   padding: 50px 120px;
-  overflow: hidden;
-}
-
-.projects-container {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping of project cards */
-  padding-bottom: 20px; /* Add some padding at the bottom */
 }
 
 .projects-section h2 {
@@ -234,13 +227,11 @@ section.projects-section {
 }
 
 .projects-cards {
-  display: inline-flex; /* Display project cards in a row */
-  gap: 20px; /* Add some space between cards */
+  display: flex;
 }
 
 .projects-card-box {
-  flex: 0 0 auto;
-  width: 300px;
+  width: 33.33%;
   margin: 35px 10px;
   padding: 33px;
   background-color: #22282f;

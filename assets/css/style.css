@@ -220,7 +220,7 @@ section.projects-section {
 .projects-section h2 {
   font-size: 28px;
   text-align: center;
-  margin-bottom: 40px; /* Add gap below the heading */
+  margin-bottom: 80px; /* Add gap below the heading */
 }
 
 .projects-section h2 > span {

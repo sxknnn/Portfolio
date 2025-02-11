@@ -220,6 +220,7 @@ section.projects-section {
 .projects-section h2 {
   font-size: 28px;
   text-align: center;
+  margin-bottom: 40px; /* Add gap below the heading */
 }
 
 .projects-section h2 > span {
@@ -231,6 +232,7 @@ section.projects-section {
   flex-wrap: wrap; /* Allow wrapping to the next row */
   gap: 20px; /* Add consistent spacing between cards */
   justify-content: flex-start; /* Align cards to the start */
+  /* margin-top: 40px; Alternatively, you can add gap here */
 }
 
 .projects-card-box {

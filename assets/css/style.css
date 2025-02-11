@@ -453,21 +453,6 @@ footer a {
     margin-top: 30px;
   }
 
-    /* experience Section */
-    section.experience-section {
-      padding: 40px;
-    }
-  
-    .experience-cards {
-      margin-top: 15px;
-      flex-direction: column;
-    }
-  
-    .experience-card-box {
-      width: 100%;
-      margin: 10px 0;
-    }
-
   /* Projects Section */
   section.projects-section {
     padding: 40px;

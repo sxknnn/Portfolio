@@ -235,11 +235,13 @@ section.projects-section {
 }
 
 .projects-cards {
-  display: flex;
+  display: inline-flex; /* Display project cards in a row */
+  gap: 20px; /* Add some space between cards */
 }
 
 .projects-card-box {
-  width: 33.33%;
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+  width: 300px; /* Set a fixed width for each card */
   margin: 35px 10px;
   padding: 33px;
   background-color: #22282f;

@@ -234,7 +234,8 @@ section.projects-section {
 }
 
 .projects-cards {
-  display: flex;
+  display: inline-flex; /* Display project cards in a row */
+  gap: 20px; /* Add some space between cards */
 }
 
 .projects-card-box {

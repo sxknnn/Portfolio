@@ -9,29 +9,29 @@ document.addEventListener("click", function (event) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.querySelector(".slider");
-  const slides = document.querySelectorAll(".slide");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-  let index = 0;
-  const maxIndex = slides.length - 3; // 3 items shown at a time
+    let index = 0;
+    const maxIndex = slides.length - 3; // 3 items shown at a time
 
-  function updateSliderPosition() {
-      slider.style.transform = `translateX(-${index * (100 / 3)}%)`;
-  }
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(-${index * (100 / 3)}%)`;
+    }
 
-  nextBtn.addEventListener("click", () => {
-      if (index < maxIndex) {
-          index++;
-          updateSliderPosition();
-      }
-  });
+    nextBtn.addEventListener("click", () => {
+        if (index < maxIndex) {
+            index++;
+            updateSliderPosition();
+        }
+    });
 
-  prevBtn.addEventListener("click", () => {
-      if (index > 0) {
-          index--;
-          updateSliderPosition();
-      }
-  });
+    prevBtn.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            updateSliderPosition();
+        }
+    });
 });

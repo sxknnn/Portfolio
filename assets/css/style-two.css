@@ -216,6 +216,81 @@ section.about-section {
   color: var(--dark-primary);
 }
 
+/* Experience Section */
+section.experience-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+}
+
+.experience-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.experience-section h2 > span {
+  color: var(--primary);
+}
+
+.experience-cards {
+  display: flex;
+}
+
+.experience-card-box {
+  width: 33.33%;
+  margin: 35px 10px;
+  padding: 33px;
+  background-color: var(--dark-secondary);
+  border-radius: 5px;
+  transition: all 0.5s ease 0s;
+}
+
+.experience-card-box:hover {
+  box-shadow: 3px 5px 20px #613026;
+  transition: all 0.5s ease 0s;
+  transform: translateY(-2px);
+}
+
+.experience-card-box__icons > i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 20px;
+}
+
+.experience-card-box:hover .projects-card-box__icons > i {
+  color: var(--primary);
+  background-color: var(--dark-primary);
+  transition: all 0.5s ease 0s;
+}
+
+.experience-card-box__desc h4 {
+  font-size: 18px;
+  margin: 18px 0 10px 0;
+}
+
+.experience-card-box__desc p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.experience-card-box__buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-card-box__buttons button {
+  background-color: var(--dark-secondary);
+}
+
+.experience-card-box__buttons button > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
 /* Projects Section */
 section.projects-section {
   background-color: var(--dark-primary);

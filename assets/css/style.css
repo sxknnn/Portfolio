@@ -215,7 +215,15 @@ section.projects-section {
   background-color: var(--dark-primary);
   color: #fff;
   padding: 50px 120px;
+  overflow: hidden;
 }
+
+.projects-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of project cards */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
 
 .projects-section h2 {
   font-size: 28px;

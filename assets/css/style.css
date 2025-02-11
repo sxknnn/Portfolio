@@ -210,6 +210,17 @@ section.about-section {
   color: var(--dark-primary);
 }
 
+/* Projects Section */
+section.projects-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+}
+
+.projects-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
 
 .projects-section h2 > span {
   color: var(--primary);
@@ -335,9 +346,6 @@ textarea:focus {
 .contact__github button:hover {
   background-color: #030303;
 }
-
-
-
 
 /* Footer */
 footer {

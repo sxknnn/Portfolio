@@ -229,16 +229,18 @@ section.projects-section {
 .projects-cards {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping to the next row */
-  justify-content: space-between; /* Distribute space between cards */
+  gap: 20px; /* Add consistent spacing between cards */
+  justify-content: flex-start; /* Align cards to the start */
 }
 
 .projects-card-box {
-  width: calc(33.33% - 20px); /* Adjust width to account for margins */
-  margin: 10px; /* Add margin around each card */
+  flex: 1 1 calc(33.33% - 20px); /* Flex-grow, flex-shrink, and flex-basis */
+  max-width: calc(33.33% - 20px); /* Ensure cards don't exceed 33.33% width */
   padding: 33px;
   background-color: #22282f;
   border-radius: 5px;
   transition: all 0.5s ease 0s;
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .projects-card-box:hover {

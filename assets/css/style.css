@@ -228,11 +228,13 @@ section.projects-section {
 
 .projects-cards {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  justify-content: space-between; /* Distribute space between cards */
 }
 
 .projects-card-box {
-  width: 33.33%;
-  margin: 35px 10px;
+  width: calc(33.33% - 20px); /* Adjust width to account for margins */
+  margin: 10px; /* Add margin around each card */
   padding: 33px;
   background-color: #22282f;
   border-radius: 5px;

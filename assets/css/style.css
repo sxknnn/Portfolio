@@ -220,9 +220,9 @@ section.projects-section {
 
 .projects-container {
   overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping of project cards */
   padding-bottom: 20px; /* Add some padding at the bottom */
 }
+
 
 
 .projects-section h2 {
@@ -243,10 +243,13 @@ section.projects-section {
   flex: 0 0 auto; /* Prevent flex items from shrinking */
   width: 300px; /* Set a fixed width for each card */
   margin: 35px 10px;
-  padding: 33px;
+  padding: 20px; /* Adjust padding to ensure content fits */
   background-color: #22282f;
   border-radius: 5px;
   transition: all 0.5s ease 0s;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
 }
 
 .projects-card-box:hover {
@@ -268,16 +271,14 @@ section.projects-section {
   transition: all 0.5s ease 0s;
 }
 
-.projects-card-box__desc h4 {
-  font-size: 18px;
-  margin: 18px 0 10px 0;
+.projects-card-box__desc {
+  flex-grow: 1; /* Allow description to take up remaining space */
 }
 
 .projects-card-box__desc p {
-  font-size: 14px;
-  color: #c4c4c4;
+  white-space: normal; /* Allow text to wrap */
+  word-break: break-word; /* Break long words if necessary */
 }
-
 .projects-card-box__buttons {
   margin-top: 25px;
   display: flex;

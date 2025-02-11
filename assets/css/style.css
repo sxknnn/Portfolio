@@ -239,7 +239,8 @@ section.projects-section {
 }
 
 .projects-card-box {
-  width: 33.33%;
+  flex: 0 0 auto;
+  width: 300px;
   margin: 35px 10px;
   padding: 33px;
   background-color: #22282f;

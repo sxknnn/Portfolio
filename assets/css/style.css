@@ -701,13 +701,7 @@ footer a {
 
 /* Optional: If your cards still have a white background, force them to be dark to match the image */
 .new-card-layout {
-    background-color: #111827 !important; 
-    border: 1px solid #1f2937; 
-    padding: 0 !important; 
-    display: flex;
-    flex-direction: column;
-    
-    /* This rounds ALL 4 corners of the outer card */
-    border-radius: 24px !important; 
-    overflow: hidden !important;
+    background-color: #111827 !important; /* Very dark background */
+    border: 1px solid #1f2937; /* Subtle border */
+    border-radius: 24px !important;
 }

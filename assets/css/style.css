@@ -713,5 +713,6 @@ footer a {
     padding: 0 !important; /* Overrides your old 33px padding so the image touches the edges */
     overflow: hidden; /* Keeps the corners rounded */
     display: flex;
+    border-radius: 24px !important;
     flex-direction: column;
 }

@@ -480,10 +480,6 @@ footer a {
   }
 }
 
-/* The Under Development Badge */
-.card-image {
-    position: relative; /* Required so the absolute badge stays inside the image wrapper */
-}
 
 .dev-badge {
     position: absolute;
@@ -523,4 +519,26 @@ footer a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
+}
+
+/* --- Image Container Styling --- */
+.card-image {
+    width: 100%;
+    height: 220px; /* You can adjust this height to make the image area taller or shorter */
+    overflow: hidden;
+    position: relative; /* Keeps the "Under Development" badge positioned correctly */
+    display: block; 
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This forces the image to fill the box without distorting */
+    object-position: center; /* Centers the image so the middle is always visible */
+    transition: transform 0.3s ease; /* Optional: adds a smooth effect if you add a hover state */
+}
+
+/* Optional: Add a subtle zoom effect when hovering over the card */
+.new-card-layout:hover .card-image img {
+    transform: scale(1.05);
 }

@@ -523,13 +523,19 @@ footer a {
 
 /* --- Image Container Styling --- */
 .card-image {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    width: 100%;
+    height: 220px; /* You can adjust this height to make the image area taller or shorter */
+    overflow: hidden;
+    position: relative; /* Keeps the "Under Development" badge positioned correctly */
+    display: block; 
 }
 
 .card-image img {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This forces the image to fill the box without distorting */
+    object-position: center; /* Centers the image so the middle is always visible */
+    transition: transform 0.3s ease; /* Optional: adds a smooth effect if you add a hover state */
 }
 /* Ensure the container spaces them nicely */
 .card-tags {
@@ -704,13 +710,9 @@ footer a {
 .new-card-layout {
     background-color: #111827 !important; /* Very dark background */
     border: 1px solid #1f2937; /* Subtle border */
-    padding: 0 !important; 
-    overflow: hidden !important; /* Keeps the corners rounded */
+    padding: 0 !important; /* Overrides your old 33px padding so the image touches the edges */
+    overflow: hidden; /* Keeps the corners rounded */
     display: flex;
-    border-radius: 24px !important; /* Round corners */
+    border-radius: 24px !important;
     flex-direction: column;
-    
-    /* THE MAGIC FIXES FOR THE WEBKIT BORDER-RADIUS BUG */
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    transform: translateZ(0); 
 }

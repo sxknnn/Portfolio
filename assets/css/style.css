@@ -528,8 +528,8 @@ footer a {
     overflow: hidden;
     position: relative; /* Keeps the "Under Development" badge positioned correctly */
     display: block; 
-    border-top-left-radius: 20px;  /* Matches the card's roundness */
-    border-top-right-radius: 20px; /* Matches the card's roundness */
+    border-top-left-radius: 24px;  /* Matches the card's roundness */
+    border-top-right-radius: 24px; /* Matches the card's roundness */
 
 }
 
@@ -710,7 +710,7 @@ footer a {
     border: 1px solid #1f2937; /* Subtle border */
     
     /* ADD THESE TO ROUND THE CORNERS */
-    border-radius: 20px; /* Adjust this number to make it more or less round (e.g. 16px or 24px) */
+    border-radius: 24px; /* Adjust this number to make it more or less round (e.g. 16px or 24px) */
     overflow: hidden; /* Chops off the square edges of the image inside */
     display: flex;
     flex-direction: column;

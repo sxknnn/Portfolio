@@ -655,7 +655,12 @@ footer a {
 }
 
 /* --- Card Text Styling --- */
-
+.card-content {
+    padding: 25px 30px 30px 30px; /* Top, Right, Bottom, Left padding */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
 /* Make the title purple, large, and bold */
 .card-content .project-title {
     color: #a855f7; /* Vibrant Purple */

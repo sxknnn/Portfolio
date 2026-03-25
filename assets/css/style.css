@@ -530,8 +530,7 @@ footer a {
     display: block; 
     border-top-left-radius: 20px;  /* Matches the card's roundness */
     border-top-right-radius: 20px; /* Matches the card's roundness */
-    border-bottom-left-radius: 20px;  /* Matches the card's roundness */
-    border-bottom-right-radius: 20px; /* Matches the card's roundness */
+
 }
 
 .card-image img {
@@ -540,6 +539,8 @@ footer a {
     object-fit: cover; /* This forces the image to fill the box without distorting */
     object-position: center; /* Centers the image so the middle is always visible */
     transition: transform 0.3s ease; /* Optional: adds a smooth effect if you add a hover state */
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 /* Ensure the container spaces them nicely */
 .card-tags {

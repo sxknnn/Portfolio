@@ -530,6 +530,8 @@ footer a {
     display: block; 
     border-top-left-radius: 20px;  /* Matches the card's roundness */
     border-top-right-radius: 20px; /* Matches the card's roundness */
+    border-bottom-left-radius: 20px;  /* Matches the card's roundness */
+    border-bottom-right-radius: 20px; /* Matches the card's roundness */
 }
 
 .card-image img {

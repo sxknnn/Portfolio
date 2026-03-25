@@ -528,9 +528,6 @@ footer a {
     overflow: hidden;
     position: relative; /* Keeps the "Under Development" badge positioned correctly */
     display: block; 
-    border-top-left-radius: 24px;  /* Matches the card's roundness */
-    border-top-right-radius: 24px; /* Matches the card's roundness */
-
 }
 
 .card-image img {
@@ -539,8 +536,6 @@ footer a {
     object-fit: cover; /* This forces the image to fill the box without distorting */
     object-position: center; /* Centers the image so the middle is always visible */
     transition: transform 0.3s ease; /* Optional: adds a smooth effect if you add a hover state */
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
 }
 /* Ensure the container spaces them nicely */
 .card-tags {
@@ -708,14 +703,4 @@ footer a {
 .new-card-layout {
     background-color: #111827 !important; /* Very dark background */
     border: 1px solid #1f2937; /* Subtle border */
-    
-    /* ADD THESE TO ROUND THE CORNERS */
-    border-radius: 24px; /* Adjust this number to make it more or less round (e.g. 16px or 24px) */
-    overflow: hidden; /* Chops off the square edges of the image inside */
-    display: flex;
-    flex-direction: column;
-    
-    /* Magic fix to keep corners round when the image zooms on hover */
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    transform: translateZ(0); 
 }

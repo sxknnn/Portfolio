@@ -479,3 +479,48 @@ footer a {
     width: 100%;
   }
 }
+
+/* The Under Development Badge */
+.card-image {
+    position: relative; /* Required so the absolute badge stays inside the image wrapper */
+}
+
+.dev-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 165, 0, 0.9); /* Orange warning color */
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Grouping multiple icon links in the footer */
+.card-icon-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-icon-links a {
+    color: #4a5568; /* Default icon color */
+    font-size: 1.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.card-icon-links a:hover {
+    color: #007bff; /* Highlight color on hover */
+    transform: scale(1.1);
+}
+
+/* Ensure the grid adapts nicely to the 7 projects */
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}

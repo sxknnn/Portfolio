@@ -556,25 +556,96 @@ footer a {
     letter-spacing: 0.3px;
 }
 
-/* --- Specific Tag Colors --- */
 
-.card-tags .tag-blue {
-    background-color: #3b82f6; /* Vibrant Blue */
-    color: #ffffff;
+
+.tag-react, .tag-css, .tag-css3, .tag-tailwind, .tag-ml { 
+    background-color: #dbeafe; /* bg-blue-100 */
+    color: #1e40af; /* text-blue-800 */
 }
 
-.card-tags .tag-purple {
-    background-color: #d8b4fe; /* Light Purple */
-    color: #4c1d95; /* Dark Purple Text */
+.tag-stripe, .tag-dsa, .tag-visualization { 
+    background-color: #f3e8ff; /* bg-purple-100 */
+    color: #6b21a8; /* text-purple-800 */
 }
 
-.card-tags .tag-lightblue {
-    background-color: #bfdbfe; /* Light Blue */
-    color: #1e3a8a; /* Dark Blue Text */
+.tag-design-system, .tag-d3, .tag-aiml { 
+    background-color: #fef3c7; /* bg-amber-100 */
+    color: #92400e; /* text-amber-800 */
 }
 
-.card-tags .tag-dark {
-    background-color: #3f4e65; /* Dark Grayish-Blue */
+.tag-realtime, .tag-mongodb { 
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #065f46; /* text-green-800 */
+}
+
+.tag-storybook { 
+    background-color: #fce7f3; /* bg-pink-100 */
+    color: #9d174d; /* text-pink-800 */
+}
+
+.tag-npm, .tag-gcp { 
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #991b1b; /* text-red-800 */
+}
+
+.tag-mui, .tag-iac { 
+    background-color: #e0e7ff; /* bg-indigo-100 */
+    color: #3730a3; /* text-indigo-800 */
+}
+
+.tag-chatbot { 
+    background-color: #ede9fe; /* bg-violet-100 */
+    color: #5b21b6; /* text-violet-800 */
+}
+
+.tag-openai, .tag-ai { 
+    background-color: #f3f4f6; /* bg-gray-100 */
+    color: #1f2937; /* text-gray-800 */
+}
+
+.tag-huggingface, .tag-aws { 
+    background-color: #ffedd5; /* bg-orange-100 */
+    color: #9a3412; /* text-orange-800 */
+}
+
+.tag-beginner { 
+    background-color: #cffafe; /* bg-cyan-100 */
+    color: #155e75; /* text-cyan-800 */
+}
+
+.tag-fastapi { 
+    background-color: #14b8a6; /* bg-teal-500 */
+    color: #ffffff; 
+}
+
+.tag-terraform { 
+    background-color: #9333ea; /* bg-purple-600 */
+    color: #ffffff; 
+}
+
+.tag-azure { 
+    background-color: #2563eb; /* bg-blue-600 */
+    color: #ffffff; 
+}
+
+.tag-algorithms { 
+    background-color: #3b82f6; /* bg-blue-500 */
+    color: #dbeafe; /* text-blue-100 */
+}
+
+.tag-nextjs { 
+    background-color: #000000; /* bg-black */
+    color: #ffffff; 
+}
+
+.tag-fullstack { 
+    background: linear-gradient(to right, #3b82f6, #9333ea); /* from-blue-500 to-purple-600 */
+    color: #ffffff; 
+}
+
+/* General dark tag for the "+3" counter */
+.tag-counter { 
+    background-color: #374151; /* Dark Grayish-Blue */
     color: #f8fafc;
 }
 /* Optional: Add a subtle zoom effect when hovering over the card */

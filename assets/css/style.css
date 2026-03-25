@@ -655,29 +655,36 @@ footer a {
 
 /* --- Card Text Styling --- */
 
+.card-content {
+    padding: 25px 30px; /* Adds a nice wide gap inside the card, around the text */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pushes everything to align nicely */
+}
+
 /* Make the title purple, large, and bold */
 .card-content .project-title {
-    color: #a855f7; /* Vibrant Purple */
+    color: #a855f7; 
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 12px; /* Gap below the title */
     letter-spacing: 0.5px;
 }
 
 /* Make the description grey and easy to read */
 .card-content .project-desc {
-    color: #9ca3af; /* Light Greyish-Blue */
+    color: #9ca3af; 
     font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem; /* Space between text and links */
+    margin-bottom: 24px; /* Big gap between text and the links */
 }
 
 /* --- Clean Text Links Styling --- */
 .project-links {
     display: flex;
-    gap: 1.5rem; /* Space between "Demo" and "GitHub" */
-    margin-bottom: 1.5rem; /* Space before the tags */
+    gap: 1.5rem; 
+    margin-bottom: 20px; /* Gap between the links and the tags */
 }
 
 .project-links a {
@@ -703,4 +710,8 @@ footer a {
 .new-card-layout {
     background-color: #111827 !important; /* Very dark background */
     border: 1px solid #1f2937; /* Subtle border */
+    padding: 0 !important; /* Overrides your old 33px padding so the image touches the edges */
+    overflow: hidden; /* Keeps the corners rounded */
+    display: flex;
+    flex-direction: column;
 }

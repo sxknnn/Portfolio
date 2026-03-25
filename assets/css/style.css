@@ -652,3 +652,55 @@ footer a {
 .new-card-layout:hover .card-image img {
     transform: scale(1.05);
 }
+
+/* --- Card Text Styling --- */
+
+/* Make the title purple, large, and bold */
+.card-content .project-title {
+    color: #a855f7; /* Vibrant Purple */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+/* Make the description grey and easy to read */
+.card-content .project-desc {
+    color: #9ca3af; /* Light Greyish-Blue */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem; /* Space between text and links */
+}
+
+/* --- Clean Text Links Styling --- */
+.project-links {
+    display: flex;
+    gap: 1.5rem; /* Space between "Demo" and "GitHub" */
+    margin-bottom: 1.5rem; /* Space before the tags */
+}
+
+.project-links a {
+    color: #d1d5db; /* Light Grey text */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* Space between the icon and the text */
+    transition: color 0.3s ease;
+}
+
+.project-links a i {
+    font-size: 1.1rem; /* Make the icons slightly larger */
+}
+
+.project-links a:hover {
+    color: #a855f7; /* Changes to purple when you hover */
+}
+
+/* Optional: If your cards still have a white background, force them to be dark to match the image */
+.new-card-layout {
+    background-color: #111827 !important; /* Very dark background */
+    border: 1px solid #1f2937; /* Subtle border */
+}

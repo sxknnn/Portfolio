@@ -460,18 +460,17 @@ footer a {
 
   /* Projects Section */
   section.projects-section {
-    padding: 40px 20px;
+    padding: 40px;
   }
 
   .projects-cards {
     margin-top: 15px;
-    grid-template-columns: 1fr; /* Forces the grid to be exactly 1 column on mobile */
-    gap: 1.5rem;
+    flex-direction: column;
   }
 
   .projects-card-box {
     width: 100%;
-   
+    margin: 10px 0;
   }
 
   /* Contact Section */
@@ -655,12 +654,7 @@ footer a {
 }
 
 /* --- Card Text Styling --- */
-.card-content {
-    padding: 25px 30px 30px 30px; /* Top, Right, Bottom, Left padding */
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; 
-}
+
 /* Make the title purple, large, and bold */
 .card-content .project-title {
     color: #a855f7; /* Vibrant Purple */

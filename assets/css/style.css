@@ -537,7 +537,46 @@ footer a {
     object-position: center; /* Centers the image so the middle is always visible */
     transition: transform 0.3s ease; /* Optional: adds a smooth effect if you add a hover state */
 }
+/* Ensure the container spaces them nicely */
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
 
+/* Base shape for all tags */
+.card-tags span {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 9999px; /* Creates the perfect rounded pill shape */
+    font-weight: 600;
+    border: none; /* Removes the border from the previous layout */
+    letter-spacing: 0.3px;
+}
+
+/* --- Specific Tag Colors --- */
+
+.card-tags .tag-blue {
+    background-color: #3b82f6; /* Vibrant Blue */
+    color: #ffffff;
+}
+
+.card-tags .tag-purple {
+    background-color: #d8b4fe; /* Light Purple */
+    color: #4c1d95; /* Dark Purple Text */
+}
+
+.card-tags .tag-lightblue {
+    background-color: #bfdbfe; /* Light Blue */
+    color: #1e3a8a; /* Dark Blue Text */
+}
+
+.card-tags .tag-dark {
+    background-color: #3f4e65; /* Dark Grayish-Blue */
+    color: #f8fafc;
+}
 /* Optional: Add a subtle zoom effect when hovering over the card */
 .new-card-layout:hover .card-image img {
     transform: scale(1.05);

@@ -458,6 +458,53 @@ footer a {
     margin-top: 30px;
   }
 
+  /*Work Exp*/
+  /* --- Timeline Mobile Fix --- */
+  .experience-section {
+      padding: 40px 20px; /* Reduce side padding for mobile */
+  }
+
+  .timeline::after {
+      left: 31px; /* Move the vertical line to the left side */
+  }
+
+  .timeline-container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 0px;
+  }
+
+  .timeline-container.right {
+      left: 0; /* Stop shifting right items */
+  }
+
+  .timeline-dot {
+      left: 6px !important; /* Move all dots to the left line */
+      width: 40px; /* Make dots slightly smaller on mobile */
+      height: 40px;
+  }
+
+  /* Move arrows so they all point left */
+  .left .timeline-content::after, 
+  .right .timeline-content::after {
+      left: -15px;
+      right: auto;
+      border-width: 15px 15px 15px 0;
+      border-color: transparent #1e1b36 transparent transparent;
+  }
+
+  /* Move dates inside the card area for mobile */
+  .timeline-date {
+      position: relative;
+      left: 0 !important;
+      right: 0 !important;
+      text-align: left !important;
+      margin-bottom: 10px;
+      top: 0;
+      width: 100%;
+      color: var(--primary); /* Highlight the date on mobile */
+  }
+
   /* Projects Section */
   section.projects-section {
     padding: 40px 20px;

@@ -83,7 +83,7 @@ section.hero-section {
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 100px 120px 50px 200px;
+  padding: 100px 180px 50px 200px;
 }
 
 .hero-section__title {
@@ -182,7 +182,7 @@ section.about-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 60px 180px;
 }
 
 .about-img img {
@@ -227,7 +227,7 @@ section.about-section {
 section.projects-section {
   background-color: var(--dark-primary);
   color: #fff;
-  padding: 50px 120px;
+  padding: 50px 180px;
 }
 
 section.projects-section h2 {
@@ -787,7 +787,7 @@ footer a {
 
 .experience-section {
     background-color: var(--dark-primary); /* Matches your dark theme */
-    padding: 60px 120px;
+    padding: 60px 180px;
     color: #fff;
 }
 

@@ -27,7 +27,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--dark-primary);
+  background-color: transparent;
   padding: 25px;
   color: #fff;
   display: flex;
@@ -43,25 +43,38 @@ header .logo {
   letter-spacing: 2px;
 }
 
+/* Container for the links (The dark pill) */
 header ul {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
+    background-color: #0d1117; /* Very dark background for the pill */
+    padding: 8px 10px;
+    border-radius: 50px; /* Makes the container a pill shape */
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow to make it float */
 }
 
+/* Remove old spacing */
 header ul li {
-  margin-right: 30px;
+    margin-right: 0; 
 }
 
+/* The individual links inside the pill */
 header ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease 0s;
+    color: #9ca3af; /* Muted grey text */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 24px; /* Space around the text to form the hover pill */
+    border-radius: 50px; /* Makes the hover effect a pill shape */
+    transition: all 0.3s ease;
+    display: block;
 }
 
+/* The Hover / Active State (The white pill) */
 header ul li a:hover {
-  color: var(--primary);
-  transition: all 0.3s ease 0s;
+    background-color: #f8fafc; /* White background */
+    color: #0f172a !important; /* Dark text */
 }
 
 /* Hero Section */

@@ -460,17 +460,20 @@ footer a {
 
   /* Projects Section */
   section.projects-section {
-    padding: 40px;
+    padding: 40px 20px;
   }
 
   .projects-cards {
     margin-top: 15px;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
   }
 
   .projects-card-box {
     width: 100%;
-    margin: 10px 0;
+    max-width: 100%;
+    margin: 0;
   }
 
   /* Contact Section */

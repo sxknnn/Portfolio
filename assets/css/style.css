@@ -721,3 +721,165 @@ footer a {
     border: 1px solid #1f2937; /* Subtle border */
     border-radius: 24px !important;
 }
+/* =========================================
+   Timeline / Experience Section
+   ========================================= */
+
+.experience-section {
+    background-color: var(--dark-primary); /* Matches your dark theme */
+    padding: 60px 120px;
+    color: #fff;
+}
+
+.experience-section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experience-section h2 > span {
+    color: var(--primary);
+}
+
+.experience-section .section-subtitle {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 60px;
+}
+
+/* The actual timeline container */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* The central vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #d1d5db; /* Light gray line */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 5px;
+}
+
+/* Container for each timeline item */
+.timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Place left containers */
+.timeline-container.left {
+    left: 0;
+}
+
+/* Place right containers */
+.timeline-container.right {
+    left: 50%;
+}
+
+/* The Icon circles on the timeline */
+.timeline-dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #111827;
+    border: 3px solid #fff; /* White border like the image */
+    border-radius: 50%;
+    top: 25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Move dots exactly to the center line */
+.left .timeline-dot {
+    right: -25px;
+}
+.right .timeline-dot {
+    left: -25px;
+}
+
+/* The Dark Purple Cards */
+.timeline-content {
+    padding: 30px;
+    background-color: #1e1b36; /* Deep dark purple matching the image */
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* CSS Triangles (The arrows pointing to the line) */
+.left .timeline-content::after {
+    content: " ";
+    position: absolute;
+    top: 35px;
+    right: -15px;
+    border-width: 15px 0 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1e1b36;
+}
+
+.right .timeline-content::after {
+    content: " ";
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    border-width: 15px 15px 15px 0;
+    border-style: solid;
+    border-color: transparent #1e1b36 transparent transparent;
+}
+
+/* Typography inside the card */
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+.timeline-content ul li {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* The Dates outside the cards */
+.timeline-date {
+    position: absolute;
+    top: 35px;
+    font-weight: 600;
+    color: #d1d5db;
+    width: 200px;
+}
+
+.left .timeline-date {
+    right: -280px; /* Pushes the date across the line to the right */
+    text-align: left;
+}
+
+.right .timeline-date {
+    left: -280px; /* Pushes the date across the line to the left */
+    text-align: right;
+}

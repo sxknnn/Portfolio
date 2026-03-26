@@ -78,38 +78,83 @@ header ul li a:hover {
 }
 
 /* Hero Section */
+/* =========================================
+   Hero Section Animations & Upgrades
+   ========================================= */
+
+/* 1. Define the Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* 2. Improve Layout & Readability */
 section.hero-section {
-  background-color: var(--dark-primary);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 100px 180px 50px 200px;
-}
-
-.hero-section__title {
-  font-size: 48px;
-}
-
-.hero-section__title span {
-  color: var(--primary);
+    justify-content: space-between; /* Pushes text to the left, image to the right */
+    gap: 40px;
 }
 
 .hero-section__desc {
-  color: #c4c4c4;
+    line-height: 1.8; /* Makes the paragraph much easier to read */
+    max-width: 550px; /* Prevents text from stretching too wide */
 }
 
-.hero-img img {
-  margin-left: 30px;
-  border-radius: 15px;
+/* 3. Make Your Name Pop with a Gradient */
+.hero-section__title span {
+    background: linear-gradient(90deg, var(--primary), #a855f7); /* Blue to Purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
-.social-icons {
-  margin: 18px 0;
+/* 4. Apply Cascading Fade-In to Text */
+.hero-section > div:first-child > div h4 {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-section__title {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.2s forwards; /* 0.2s delay */
+}
+
+.hero-section__desc {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.4s forwards; /* 0.4s delay */
 }
 
 ul.social-icons {
-  list-style: none;
-  display: flex;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.6s forwards; /* 0.6s delay */
+}
+
+.hero-buttons {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.8s forwards; /* 0.8s delay */
+}
+
+/* 5. Upgrade the Profile Image (Fade-in + Continuous Float + Soft Shadow) */
+.hero-img {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.5s forwards; /* Fades in smoothly */
+}
+
+.hero-img img {
+    border-radius: 24px; /* Matches the new modern cards */
+    box-shadow: 0 15px 35px rgba(18, 189, 255, 0.15); /* Soft blue glowing shadow */
+    animation: float 5s ease-in-out infinite; /* Continuous floating effect */
 }
 
 .social-icons li {

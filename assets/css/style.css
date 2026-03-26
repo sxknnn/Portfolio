@@ -227,11 +227,11 @@ section.projects-section h2 > span {
   color: var(--primary);
 }
 
-section.projects-section .projects-cards {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping to the next row */
-  gap: 20px; /* Add consistent spacing between cards */
-  justify-content: flex-start; /* Align cards to the start */
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem; /* Space between the cards */
+    padding: 1rem 0;
 }
 
 section.projects-section .projects-card-box {

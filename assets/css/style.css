@@ -463,17 +463,29 @@ footer a {
     padding: 40px 20px;
   }
 
-  .projects-cards {
+.projects-cards {
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr; 
+    display: flex; /* Switch to flexbox for the horizontal row */
+    flex-wrap: nowrap; /* Forces them into a single horizontal line */
+    overflow-x: auto; /* Enables side-to-side scrolling */
+    scroll-snap-type: x mandatory; /* Tells the browser to "snap" to elements */
     gap: 1.5rem;
+    padding-bottom: 20px; /* Gives room for the bottom rounded corners/shadows */
+    
+    /* Hides the ugly default scrollbar for a clean, touch-friendly look */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+.projects-cards::-webkit-scrollbar {
+    display: none; 
   }
 
   .projects-card-box {
-    width: 100%;
+    flex: 0 0 100%; /* Forces every card to take up exactly 100% of the screen width */
     max-width: 100%;
     margin: 0;
+    scroll-snap-align: center; /* Snaps the card perfectly into the middle when swiping stops */
   }
 
   /* Contact Section */
